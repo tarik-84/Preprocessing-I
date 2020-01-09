@@ -4,6 +4,11 @@
    License: none (public domain)
 */
 
+.box-spacing {
+  margin: 1%;
+  padding: 2%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,5 +60,123 @@ table {
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1%;
+    
+    @media ( max-width: 700px ) {
+      justify-content: center;
+    }
+    
+    @media ( max-width: 500px ) {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    a {
+        padding: 3%;
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+         color: red;
+    }
+}
+
+.top {
+    background-color: lavender;
+    height: 70vh;
+    
+    @media ( max-width: 500px ){
+        height: 40vh
+    }
+    
+    h1 {
+        font-size: 100px;
+        .box-spacing();
+   
+        @media ( max-width: 700px ){
+            font-size: 60px;
+        }
+        @media ( max-width: 500px ){
+            font-size: 40px;
+        }
+        
+    }
+    h2 {
+        font-size: 40px;
+        .box-spacing();
+        
+      @media ( max-width: 500px ){
+            font-size: 20px;
+        }
+    
+    }    
+    p {
+        font-size: 20px;
+        .box-spacing();
+    }
+    .button {
+        border: solid 1px lavender;
+        margin: 3%;
+        padding: 1%;
+        text-decoration: none;
+        background-color: lightblue; 
+    }
+
+}
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    align-content: space-between; 
+  
+  .text{
+    width: 45%;
+     
+    
+    h2 {
+      font-size:40px;
+      .box-spacing();
+    }
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    
+    
+     
+  }
+  li {
+        padding: 1%;
+    text-align: center;
+    
+        }
+}
+footer {
+  
+  h3{
+    font-size: 35px;
+    .box-spacing();
+  }
+  table {
+    width: 100%;
+    margin-left:3%;
+  
+    td{
+      .box-spacing();
+    }
+      
+  }
+    p{
+      border: solid darkslategray;
+      background-color: darkslategray;
+      .box-spacing();
+       text-align: center;    
+    
+      }
+}
