@@ -53,7 +53,7 @@ dl,
 dt,
 dd,
 ol,
-ul,
+/* ul, */
 li,
 fieldset,
 form,
@@ -111,10 +111,10 @@ section {
 body {
   line-height: 1;
 }
-ol,
+/* ol,
 ul {
   list-style: none;
-}
+} */
 blockquote,
 q {
   quotes: none;
@@ -135,49 +135,42 @@ table {
   box-sizing: border-box;
 }
 html,
-body {
+/* body {
   height: 100%;
   width: 100%;
+} */
+
+.header {
+  border-bottom: solid 1px black;
 }
-nav {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 1%;
-}
-@media (max-width: 700px) {
-  nav {
-    justify-content: center;
-  }
-}
-@media (max-width: 500px) {
-  nav {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-nav a {
-  padding: 3%;
-  color: black;
+
+.top a, .projects a {
   text-decoration: none;
+  color: black;
 }
-nav a:hover {
+
+a:hover {
   color: red;
 }
-.top {
-  background-color: lavender;
-  height: 70vh;
-}
-@media (max-width: 500px) {
-  .top {
-    height: 40vh;
-  }
-}
-.top h1 {
-  font-size: 100px;
+
+.top, .skills {
   margin: 1%;
-  padding: 2%;
+  padding: 1%;
+  text-align: center;
 }
-@media (max-width: 700px) {
+
+.top h1 {
+  font-size: 50px;
+  color: brown;
+}
+
+.skills h3, .education h3, .projects h3, .about h3 {
+  font-size: 25px;
+  color: brown;
+  margin: 1%;
+  text-align: center;
+}  
+/* @media (max-width: 700px) {
   .top h1 {
     font-size: 60px;
   }
@@ -186,68 +179,36 @@ nav a:hover {
   .top h1 {
     font-size: 40px;
   }
-}
-.top h2 {
-  font-size: 40px;
-  margin: 1%;
-  padding: 2%;
-}
-@media (max-width: 500px) {
-  .top h2 {
-    font-size: 20px;
-  }
-}
-.top p {
+} */
+
+.top p, .skills p {
   font-size: 20px;
   margin: 1%;
-  padding: 2%;
 }
-.top .button {
-  border: solid 1px lavender;
-  margin: 3%;
-  padding: 1%;
-  text-decoration: none;
-  background-color: lightblue;
+
+.education, .projects {
+  border-bottom: solid 1px;
 }
-.middle {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2%;
-  align-content: space-between;
-}
-.middle .text {
-  width: 45%;
-}
-.middle .text h2 {
-  font-size: 40px;
+
+.education h4, .projects h4 {
+  font-size: 20px;
+  color: rgb(3, 3, 63);
   margin: 1%;
-  padding: 2%;
 }
-.middle ul {
-  display: flex;
-  flex-direction: column;
-}
-.middle li {
-  padding: 1%;
-  text-align: center;
-}
-footer h3 {
-  font-size: 35px;
+
+.education p, .projects p {
+  
   margin: 1%;
-  padding: 2%;
-}
-footer table {
-  width: 100%;
-  margin-left: 3%;
-}
-footer table td {
+}  
+
+.education h5, .projects h5 {
   margin: 1%;
-  padding: 2%;
+  position: absolute;
+  right: 5%;
 }
-footer p {
-  border: solid darkslategray;
-  background-color: darkslategray;
-  margin: 1%;
-  padding: 2%;
-  text-align: center;
-}
+
+
+
+
+
+
