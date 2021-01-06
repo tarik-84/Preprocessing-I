@@ -164,7 +164,7 @@ a:hover {
   color: brown;
 }
 
-.skills h3, .education h3, .projects h3, .about h3 {
+.skills h3, .education h3, .projects h3, .work h3, .about h3 {
   font-size: 25px;
   color: brown;
   margin: 1%;
@@ -186,25 +186,25 @@ a:hover {
   margin: 1%;
 }
 
-.education, .projects {
+.education, .projects, .work {
   border-bottom: solid 1px;
 }
 
-.education h4, .projects h4 {
+.education h4, .projects h4, .work h4 {
   font-size: 20px;
   color: rgb(3, 3, 63);
   margin: 1%;
 }
 
-.education p, .projects p {
+.projects p {
   
   margin: 1%;
 }  
 
-.education h5, .projects h5 {
+.education h5, .projects h5, .work h5 {
   margin: 1%;
   position: absolute;
-  right: 5%;
+  right: 1%;
 }
 
 
