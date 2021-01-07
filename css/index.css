@@ -140,10 +140,6 @@ html,
   width: 100%;
 } */
 
-.header {
-  border-bottom: solid 1px black;
-}
-
 .top a, .projects a {
   text-decoration: none;
   color: black;
@@ -186,7 +182,7 @@ a:hover {
   margin: 1%;
 }
 
-.education, .projects, .work {
+.education, .projects, .work, .skills {
   border-bottom: solid 1px;
 }
 
@@ -204,10 +200,12 @@ a:hover {
 .education h5, .projects h5, .work h5 {
   margin: 1%;
   position: absolute;
-  right: 1%;
+  right: 4%;
 }
 
-
+.education, .projects, .work, .about, .skills {
+  margin-left: 2%;
+}
 
 
 
